@@ -16,6 +16,14 @@
 			border-radius: 20px;
 			padding: 20px 25px;
 			margin-top: 20px;
+			display: flex;
+			align-items: center;
+
+			svg {
+				fill: currentColor;
+				margin-left: 10px;
+				width: 10px;
+			}
 		}
 	}
 

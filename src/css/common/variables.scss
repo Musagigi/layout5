@@ -1,0 +1,36 @@
+$maxWidthBody: 1920px;
+$maxWidthContainer: 1152px;
+$mainFont: "PublicSans", sans-serif;
+$secondFont: "LibreBaskerville", sans-serif;
+$pathImg: "/img/";
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorRed: red;
+$column: 12;
+$offset: 30px;
+$offsetOneSide: 15px;
+$blockOffset: 12rem 0;
+
+.btnReset {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.btn {
+	font-size: 15px;
+	color: #fff;
+	background-color: #23a030;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
+	padding: 15px;
+	transition: background-color, 0.3s ease-in;
+}
+
+.btn:hover {
+	background-color: #f6980c;
+	box-shadow: rgba(246 152 12 / 20%);
+}

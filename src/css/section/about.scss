@@ -1,0 +1,97 @@
+.about {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: $blockOffset;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	@include maxWidth(url("/img/main/back.png"));
+
+	&__info {
+		max-width: 550px;
+
+		button {
+			font-size: 18px;
+			border-radius: 20px;
+			padding: 20px 25px;
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+
+			svg {
+				fill: currentColor;
+				margin-left: 10px;
+				width: 10px;
+			}
+		}
+	}
+
+	&__title {
+		@include fontSizeTitle(36px, 70px);
+		@include lineHeightTitle(40px, 76px);
+		font-weight: 600;
+		margin-top: 20px;
+	}
+
+	&__subtitle {
+		margin-top: 20px;
+		font-size: 18px;
+		line-height: 30px;
+		opacity: 0.8;
+	}
+
+	&__sun-image {
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		animation: rotation 10s linear infinite;
+	}
+
+	&__image {
+		width: 500px;
+	}
+}
+
+@keyframes rotation {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media screen and (max-width: 721px) {
+	.about {
+		flex-direction: column-reverse;
+
+		padding: $blockOffset;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+
+		&__images {
+			max-width: 320px;
+		}
+
+		&__sun-image {
+			width: 75px;
+			height: 75px;
+		}
+
+		&__image {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.about {
+		&__sun-image {
+			width: 75px;
+			height: 75px;
+		}
+
+		&__image {
+			width: 280px;
+		}
+	}
+}

@@ -4,17 +4,10 @@ const { default: plugin } = require('tailwindcss');
 module.exports = {
 	content: ["./src/**/*.html"],
 	theme: {
-		extend: {},
-		colors: {
-			dark: '#213053',
-			white: '#fff',
-			btnColor: '#23a030',
-			bthColorHover: '#f6980c',
-		},
 		screens: {
 			sm: '320px',
 			md: '768px',
-			lg: '1024px',
+			lg: '875px',
 			xl: '1152px',
 		},
 		container: {
@@ -29,7 +22,53 @@ module.exports = {
 		},
 		fontFamily: {
 			sans: ['Roboto', 'sans-serif'],
-		}
+		},
+		extend: {
+			backgroundImage: {
+				'about-setion': 'url("/img/main/back.png")'
+			},
+			keyframes: {
+				emergenceLeft: {
+					'0%': {
+						opacity: 0,
+						transform: 'translate3d(-100%,0,0)'
+					},
+					'100%': {
+						opacity: 1,
+						transform: 'translate3d(0,0,0)'
+					}
+				},
+				emergenceRight: {
+					'0%': {
+						opacity: 0,
+						transform: 'translate3d(100%,0,0)'
+					},
+					'100%': {
+						opacity: 1,
+						transform: 'translate3d(0,0,0)'
+					}
+				},
+				rotationSun: {
+					'100%': {
+						transform: 'rotate(360deg)',
+					}
+				}
+			},
+			animation: {
+				emergenceLeft: 'emergenceLeft 1.5s ease-in-out 0s;',
+				emergenceRight: 'emergenceRight 1.5s ease-in-out 0s',
+				rotationSun: 'rotationSun 10s linear infinite'
+			}
+		},
+		colors: {
+			dark: '#213053',
+			white: '#fff',
+			darkWhite: '#E7EAF9',
+			btnColor: '#23a030',
+			bthColorHover: '#f6980c',
+			shadowColor: 'rgb(52,213,68,0.4)',
+			shadowColorHover: 'rgb(246,152,12,0.3)'
+		},
 	},
 	plugins: [
 		function ({ matchUtilities }) {

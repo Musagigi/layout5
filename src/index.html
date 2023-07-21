@@ -8,42 +8,49 @@
 		<script type="module" src="/js/main.js"></script>
 		<title>Солнечные батареи GreenCorp</title>
 	</head>
-	<body>
+	<body class="overflow-x-hidden">
 		<div class="max-xl:max-w-none">
-			<header
-				class="flex justify-between items-center p-5 sticky top-[0] z-[1] bg-slate-50"
-			>
+			<header class="flex-jb-ic p-5 sticky top-[0] z-[1] bg-darkWhite">
 				<img class="h-[30px]" src="/img/header/logo.svg" alt="logo image" />
 
-				<div class="header__controls">
-					<a class="text-sm" href="#contacts">Контакты</a>
+				<div>
+					<a class="font-semibold mr-6" href="#contacts">Контакты</a>
 					<button class="btn-main">Заказать</button>
 				</div>
 			</header>
-			<section class="about">
-				<div class="about__info">
-					<h1 class="about__title">Солнечные батареи GreenCorp</h1>
-					<p class="about__subtitle">
+
+			<section
+				class="about flex-jb-ic gap-5 section-padding bg-about-setion bg-no-repeat bg-center bg-cover"
+			>
+				<div class="max-w-[550px] animate-emergenceLeft">
+					<h1 class="text-[70px] leading-[76px] font-semibold">
+						Солнечные батареи GreenCorp
+					</h1>
+					<p class="leading-[30px] opacity-[0.8] mt-5">
 						Производите дешёвую экологически чистую электроэнергию из солнечного
 						света
 					</p>
-					<button>
+					<button class="btn-main flex items-center mt-5">
 						Узнать подробнее
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+						<svg
+							class="w-[10px] ml-[10px] fill-white"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 320 512"
+						>
 							<path
 								d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
 							/>
 						</svg>
 					</button>
 				</div>
-				<div class="about__images">
+				<div class="max-w-[550px] animate-emergenceRight">
 					<img
-						class="about__sun-image"
+						class="inline-block w-[100px] animate-rotationSun"
 						src="/img/main/sun.png"
 						alt="sun image"
 					/>
 					<img
-						class="about__image"
+						class="w-[100%]"
 						src="/img/main/solar-panel.png"
 						alt="solar-panel image"
 					/>

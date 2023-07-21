@@ -22,116 +22,27 @@
 
 @layer components {
 	.btn-main {
-		@apply p-[15px] text-[15px] rounded-[15px] cursor-pointer text-white bg-btnColor shadow-[0_16px_36px_rgb(52,213,68/22%)] 
-		transition-colors ease-in duration-[0.3s] hover:bg-bthColorHover hover:shadow-[rgb(246,152,12/20%)];
+		@apply p-[15px] text-[15px] rounded-[15px] cursor-pointer text-white bg-btnColor shadow-[0px_16px_36px] shadow-shadowColor
+		transition-all ease-in duration-[0.3s] hover:bg-bthColorHover hover:shadow-shadowColorHover;
+	}
+
+	.flex-jb-ic {
+		@apply flex justify-between items-center;
+	}
+
+	.section-padding {
+		@apply py-[115px] px-5;
 	}
 }
 
-.header a {
-	font-size: 15px;
-	font-weight: 600;
-	margin-right: 25px;
-	color: #213053;
-}
-
-.btns button {
+/* .btns button {
 	border: none;
 	background-color: #2c3e50;
 	color: #95a5a6;
 	padding: 10px;
 	cursor: pointer;
 	transition: box-shadow 0.5s ease;
-}
-
-/* ABOUT START */
-.about {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 115px 20px;
-	background: url("/img/main/back.png") no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.about__info {
-	display: inline-block;
-	max-width: 550px;
-	animation: left 1.5s ease-in-out 0s;
-}
-
-@keyframes left {
-	0% {
-		opacity: 0;
-		transform: translate3d(-100%, 0, 0);
-	}
-	100% {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-.about__info h1 {
-	font-size: 70px;
-	font-weight: 600;
-	line-height: 76px;
-}
-
-.about__info p {
-	font-size: 18px;
-	line-height: 30px;
-	opacity: 0.8;
-}
-
-.about__info button {
-	font-size: 18px;
-	border-radius: 20px;
-	padding: 20px 25px;
-	margin-top: 20px;
-	display: flex;
-	align-items: center;
-}
-
-.about__info button svg {
-	fill: currentColor;
-	margin-left: 10px;
-	width: 10px;
-}
-
-.about__images {
-	display: inline-block;
-	animation: right 1.5s ease-in-out 0s;
-}
-
-@keyframes right {
-	0% {
-		opacity: 0;
-		transform: translate3d(100%, 0, 0);
-	}
-	100% {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-.about__image {
-	width: 500px;
-}
-
-.about__sun-image {
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	animation: rotation 10s linear infinite;
-}
-
-@keyframes rotation {
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-/* ABOUT END */
+} */
 
 /* FORM START */
 .form {

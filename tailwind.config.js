@@ -5,12 +5,17 @@ module.exports = {
 	content: ["./src/**/*.html"],
 	theme: {
 		extend: {},
+		colors: {
+			dark: '#213053',
+			white: '#fff',
+			btnColor: '#23a030',
+			bthColorHover: '#f6980c',
+		},
 		screens: {
-			xs: '420px',
-			sm: '640px',
+			sm: '320px',
 			md: '768px',
-			lg: '1025px',
-			xl: '1170px',
+			lg: '1024px',
+			xl: '1152px',
 		},
 		container: {
 			center: true,

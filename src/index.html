@@ -9,28 +9,34 @@
 		<title>Солнечные батареи GreenCorp</title>
 	</head>
 	<body class="overflow-x-hidden">
-		<div class="max-xl:max-w-none">
-			<header class="flex-jb-ic p-5 sticky top-[0] z-[1] bg-darkWhite">
-				<img class="h-[30px]" src="/img/header/logo.svg" alt="logo image" />
+		<div class="max-sm:max-w-none">
+			<header class="flex-jb-ic p-2.5 sticky top-[0] z-[1] bg-darkWhite md:p-5">
+				<img
+					class="h-5 md:h-[30px]"
+					src="/img/header/logo.svg"
+					alt="logo image"
+				/>
 
 				<div>
-					<a class="font-semibold mr-6" href="#contacts">Контакты</a>
+					<a class="mr-2 font-semibold md:mr-6" href="#contacts">Контакты</a>
 					<button class="btn-main">Заказать</button>
 				</div>
 			</header>
 
 			<section
-				class="about flex-jb-ic gap-5 section-padding bg-about-setion bg-no-repeat bg-center bg-cover"
+				class="flex flex-col-reverse items-center gap-5 padding-sm bg-about-setion bg-no-repeat bg-center bg-cover md:flex-jb-ic md:padding-md"
 			>
-				<div class="max-w-[550px] animate-emergenceLeft">
-					<h1 class="text-[70px] leading-[76px] font-semibold">
+				<div
+					class="max-w-[550px] text-center animate-emergenceLeft md:text-left"
+				>
+					<h1 class="md:text-[70px] md:leading-[76px]">
 						Солнечные батареи GreenCorp
 					</h1>
 					<p class="leading-[30px] opacity-[0.8] mt-5">
 						Производите дешёвую экологически чистую электроэнергию из солнечного
 						света
 					</p>
-					<button class="btn-main flex items-center mt-5">
+					<button class="btn-main flex items-center mx-auto mt-5 md:mx-0">
 						Узнать подробнее
 						<svg
 							class="w-[10px] ml-[10px] fill-white"
@@ -45,24 +51,22 @@
 				</div>
 				<div class="max-w-[550px] animate-emergenceRight">
 					<img
-						class="inline-block w-[100px] animate-rotationSun"
+						class="w-[75px] inline-block animate-rotationSun md:w-[100px]"
 						src="/img/main/sun.png"
 						alt="sun image"
 					/>
 					<img
-						class="w-[100%]"
+						class="w-[280px] md:w-full"
 						src="/img/main/solar-panel.png"
 						alt="solar-panel image"
 					/>
 				</div>
 			</section>
 			<section
-				class="flex justify-center items-center text-center text-white bg-darkBlue section-padding"
+				class="flex justify-center items-center text-center text-white bg-darkBlue padding-sm md:padding-md"
 			>
-				<div class="w-[550px]">
-					<h1 class="text-[48px] font-bold leading-[56px]">
-						Оставьте свои контакты
-					</h1>
+				<div class="max-w-[550px]">
+					<h1 class="md:text-5xl md:leading-[56px]">Оставьте свои контакты</h1>
 					<p class="leading-[22px] opacity-[0.65] mt-5">
 						Поможем подобрать модель. <br />Выбрать удобный вариант доставки и
 						установки. <br />Гарантия возврата денег.
@@ -123,33 +127,31 @@
 					</form>
 				</div>
 			</section>
-			<footer class="py-[90px] px-5 text-base font-semibold">
-				<div class="flex justify-center gap-20">
+			<footer
+				class="padding-sm text-center text-base font-semibold md:py-[90px] md:px-5 md:text-left"
+			>
+				<div
+					class="flex flex-col gap-5 md:flex-row md:justify-center md:gap-20"
+				>
 					<div>
-						<h3 class="text-[16px] opacity-[0.7] mt-[30px]">Позвонить нам:</h3>
-						<div class="footer__links">
-							<a class="flex flex-col mt-[15px]" href="#">+7 (495) 999-99-99</a>
+						<h3 class="text-base opacity-[0.7]">Позвонить нам:</h3>
+						<div class="flex flex-col md:mt-[15px]">
+							<a class="" href="#">+7 (495) 999-99-99</a>
 						</div>
 					</div>
 					<div>
-						<h3 class="text-[16px] opacity-[0.7] mt-[30px]">
-							Решение для дома:
-						</h3>
-						<div class="footer__links">
-							<a class="flex flex-col mt-[15px]" href="#"
-								>Солнечные панели GreenRobotic</a
-							>
-							<a class="flex flex-col mt-[15px]" href="#"
-								>Системы солнечных панелей GreenStation</a
-							>
+						<h3 class="text-[16px] opacity-[0.7]">Решение для дома:</h3>
+						<div class="flex flex-col md:mt-[15px]">
+							<a class="" href="#">Солнечные панели GreenRobotic</a>
+							<a class="" href="#">Системы солнечных панелей GreenStation</a>
 						</div>
 					</div>
 					<div>
-						<h3 class="text-[16px] opacity-[0.7] mt-[30px]">Компания</h3>
-						<div class="footer__links">
-							<a class="flex flex-col mt-[15px]" href="#">Контакты</a>
-							<a class="flex flex-col mt-[15px]" href="#">Вакансии</a>
-							<a class="flex flex-col mt-[15px]" href="#">СМИ</a>
+						<h3 class="text-[16px] opacity-[0.7]">Компания</h3>
+						<div class="flex flex-col md:mt-[15px]">
+							<a class="" href="#">Контакты</a>
+							<a class="" href="#">Вакансии</a>
+							<a class="" href="#">СМИ</a>
 						</div>
 					</div>
 				</div>

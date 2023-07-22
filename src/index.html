@@ -56,36 +56,68 @@
 					/>
 				</div>
 			</section>
-			<section class="form">
-				<div class="form__container">
-					<h1 class="form__title">Оставьте свои контакты</h1>
-					<p class="form__subtitle">
+			<section
+				class="flex justify-center items-center text-center text-white bg-darkBlue section-padding"
+			>
+				<div class="w-[550px]">
+					<h1 class="text-[48px] font-bold leading-[56px]">
+						Оставьте свои контакты
+					</h1>
+					<p class="leading-[22px] opacity-[0.65] mt-5">
 						Поможем подобрать модель. <br />Выбрать удобный вариант доставки и
 						установки. <br />Гарантия возврата денег.
 					</p>
-					<form action="#">
-						<div class="form__group">
-							<label for="name">Ваше имя</label>
-							<input type="text" id="name" placeholder="Введите имя" />
+					<form class="grid gap-5 mt-[60px]" action="#">
+						<div class="flex flex-col text-left">
+							<label class="font-semibold mb-[15px]" for="name">Ваше имя</label>
+							<input
+								class="h-[60px] px-5 rounded-[15px] outline-none"
+								type="text"
+								id="name"
+								placeholder="Введите имя"
+							/>
 						</div>
-						<div class="form__group">
-							<label for="email">Электронный адрес</label>
-							<input type="email" id="email" placeholder="***@yandex.ru" />
+						<div class="flex flex-col text-left">
+							<label class="font-semibold mb-[15px]" for="email"
+								>Электронный адрес</label
+							>
+							<input
+								class="h-[60px] px-5 rounded-[15px] outline-none"
+								type="email"
+								id="email"
+								placeholder="***@yandex.ru"
+							/>
 						</div>
-						<div class="form__group">
-							<label for="phone">Номер телефона</label>
-							<input type="tel" id="phone" placeholder="7(999)999-99-99" />
+						<div class="flex flex-col text-left">
+							<label class="font-semibold mb-[15px]" for="phone"
+								>Номер телефона</label
+							>
+							<input
+								class="h-[60px] px-5 rounded-[15px] outline-none"
+								type="tel"
+								id="phone"
+								placeholder="7(999)999-99-99"
+							/>
 						</div>
-						<div class="form__group">
-							<label for="budget">Примерный бюджет</label>
-							<select name="" id="budget">
+						<div class="flex flex-col text-left">
+							<label class="font-semibold mb-[15px]" for="budget"
+								>Примерный бюджет</label
+							>
+							<select
+								class="text-dark h-[60px] px-5 rounded-[15px] appearance-none"
+								name=""
+								id="budget"
+							>
 								<option value="10-30">10 000р - 30 000р</option>
 								<option value="30-60">30 000р - 60 000р</option>
 								<option value="60-100">60 000р - 100 000р</option>
 								<option value="100+">100 000р</option>
 							</select>
 						</div>
-						<button class="form__submit btn" type="submit">
+						<button
+							class="btn-main text-[18px] font-semibold mt-10"
+							type="submit"
+						>
 							Отправить заявку
 						</button>
 					</form>

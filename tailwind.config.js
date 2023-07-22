@@ -64,6 +64,7 @@ module.exports = {
 			dark: '#213053',
 			white: '#fff',
 			darkWhite: '#E7EAF9',
+			darkBlue: '#1d263a',
 			btnColor: '#23a030',
 			bthColorHover: '#f6980c',
 			shadowColor: 'rgb(52,213,68,0.4)',

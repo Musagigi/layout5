@@ -68,7 +68,9 @@ module.exports = {
 			btnColor: '#23a030',
 			bthColorHover: '#f6980c',
 			shadowColor: 'rgb(52,213,68,0.4)',
-			shadowColorHover: 'rgb(246,152,12,0.3)'
+			shadowColorHover: 'rgb(246,152,12,0.3)',
+			borderColor: '#D9E4E6',
+			bgFeatures: '#eaeff9'
 		},
 	},
 	plugins: [

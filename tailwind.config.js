@@ -25,7 +25,8 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-				'about-setion': 'url("/img/main/back.png")'
+				'about-section': 'url("/img/main/back.png")',
+				'promo-section': 'url("/img/main/promo.jpg")'
 			},
 			keyframes: {
 				emergenceLeft: {
@@ -74,7 +75,8 @@ module.exports = {
 			bgFeaturesCardL: '#dc5e26',
 			bgFeaturesCardLShadow: 'rgb(221,95,38,0.3)',
 			bgFeaturesCardR: '#1D263A',
-			bgFeaturesCardRShadow: 'rgb(29,38,58,0.3)'
+			bgFeaturesCardRShadow: 'rgb(29,38,58,0.3)',
+			bgPromo: '#dd5f26',
 		},
 	},
 	plugins: [

@@ -10,7 +10,9 @@
 	</head>
 	<body class="overflow-x-hidden">
 		<div class="max-sm:max-w-none">
-			<header class="flex-jb-ic p-2.5 sticky top-[0] z-[1] bg-darkWhite md:p-5">
+			<header
+				class="flex items-center justify-between p-2.5 sticky top-[0] z-[1] bg-darkWhite md:p-5"
+			>
 				<img
 					class="h-5 md:h-[30px]"
 					src="/img/header/logo.svg"
@@ -24,7 +26,7 @@
 			</header>
 
 			<section
-				class="about flex flex-col-reverse items-center gap-5 padding-sm bg-about-setion bg-no-repeat bg-center bg-cover md:flex md:flex-row md:flex-jb-ic md:padding-md"
+				class="about flex flex-col-reverse items-center gap-5 padding-sm bg-about-section bg-no-repeat bg-center bg-cover md:flex md:flex-row md:flex-jb-ic md:padding-md"
 			>
 				<div
 					class="max-w-[550px] text-center animate-emergenceLeft md:text-left"
@@ -62,7 +64,9 @@
 					/>
 				</div>
 			</section>
-			<section class="features padding-sm md:padding-md">
+			<section
+				class="features padding-sm md:flex md:justify-evenly md:flex-wrap md:padding-md"
+			>
 				<div class="grid gap-[50px] grid-cols-ideal-[300px]">
 					<div
 						class="pt-[35px] pb-[25px] px-10 border border-borderColor rounded-[5px]"
@@ -114,7 +118,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="my-5 border-b border-borderColor md:my-[50px]"></div>
+				<div class="w-full my-5 border-b border-borderColor md:my-[50px]"></div>
 				<div class="md:flex md:items-center">
 					<div class="mb-5 md:mb-0 md:mr-[10px]">
 						<h2 class="md:text-5xl">
@@ -228,7 +232,44 @@
 					</div>
 				</div>
 			</section>
-			<section class="promo"></section>
+			<section
+				class="promo mt-[50px] md:mt-[115px] md:flex md:flex-row-reverse md:justify-between"
+			>
+				<div class="bg-bgPromo py-[50px] px-[10px] md:py-[160px] md:px-[50px]">
+					<div
+						class="bg-white py-[30px] px-8 text-[20px] leading-[22px] font-medium rounded-[25px] md:px-10"
+					>
+						<h2 class="text-3xl md:text-4xl">Зарядите свой дом</h2>
+						<p class="mt-5 opacity-[0.8]">
+							<span
+								class="inline-block w-[10px] h-[10px] rounded-full mr-[10px] bg-bgPromo"
+							></span>
+							Солнечные панели сертифицированы мировыми экспертами: система
+							безопасна и надежна
+						</p>
+						<p class="mt-5 opacity-[0.8]">
+							<span
+								class="inline-block w-[10px] h-[10px] rounded-full mr-[10px] bg-bgPromo"
+							></span>
+							Следите за накоплением энергии вашего дома в режиме реального
+							времени и настраивайте процент расхода и накопления энергии
+						</p>
+						<button
+							class="btn-main text-base font-semibold px-[30px] flex items-center mx-auto mt-5 md:mx-0"
+						>
+							Заказать
+							<svg class="w-[10px] fill-white ml-1" viewBox="0 0 320 512">
+								<path
+									d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div
+					class="h-[500px] w-full bg-promo-section bg-center bg-cover bg-no-repeat md:w-1/2 md:h-auto md:shrink-0"
+				></div>
+			</section>
 			<section
 				class="form flex justify-center items-center text-center text-white bg-darkBlue padding-sm md:padding-md"
 			>

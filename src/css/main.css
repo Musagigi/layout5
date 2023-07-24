@@ -32,7 +32,7 @@
 	}
 
 	.flex-jb-ic {
-		@apply flex justify-between items-center;
+		@apply flex justify-evenly items-center;
 	}
 
 	.padding-md {

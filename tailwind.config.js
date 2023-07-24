@@ -70,7 +70,11 @@ module.exports = {
 			shadowColor: 'rgb(52,213,68,0.4)',
 			shadowColorHover: 'rgb(246,152,12,0.3)',
 			borderColor: '#D9E4E6',
-			bgFeatures: '#eaeff9'
+			bgFeatures: '#eaeff9',
+			bgFeaturesCardL: '#dc5e26',
+			bgFeaturesCardLShadow: 'rgb(221,95,38,0.3)',
+			bgFeaturesCardR: '#1D263A',
+			bgFeaturesCardRShadow: 'rgb(29,38,58,0.3)'
 		},
 	},
 	plugins: [

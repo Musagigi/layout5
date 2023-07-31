@@ -42,4 +42,8 @@
 	.padding-sm {
 		@apply py-[50px] px-2.5;
 	}
+
+	.header_scrolled {
+		@apply bg-white shadow-[0px_12px_34px] shadow-darkWhite;
+	}
 }

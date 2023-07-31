@@ -53,7 +53,7 @@ module.exports = {
 					'100%': {
 						transform: 'rotate(360deg)',
 					}
-				}
+				},
 			},
 			animation: {
 				emergenceLeft: 'emergenceLeft 1.5s ease-in-out 0s;',

@@ -11,7 +11,7 @@
 	<body class="overflow-x-hidden">
 		<div class="max-sm:max-w-none">
 			<header
-				class="flex items-center justify-between p-2.5 sticky top-[0] z-[1] bg-darkWhite md:p-5"
+				class="flex items-center justify-between p-2.5 fixed top-[0] left-[0] right-[0] z-[1] transition-all duration-[0.25s] ease-linear header_scrolled md:p-5"
 			>
 				<img
 					class="h-5 md:h-[30px]"
@@ -26,7 +26,7 @@
 			</header>
 
 			<section
-				class="about flex flex-col-reverse items-center gap-5 padding-sm bg-about-section bg-no-repeat bg-center bg-cover md:flex md:flex-row md:flex-jb-ic md:padding-md"
+				class="about relative flex flex-col-reverse items-center gap-5 padding-sm pt-[200px] bg-about-section bg-no-repeat bg-center bg-cover md:flex md:flex-row md:flex-jb-ic md:padding-md"
 			>
 				<div
 					class="max-w-[550px] text-center animate-emergenceLeft md:text-left"
@@ -122,8 +122,9 @@
 				<div class="md:flex md:items-center">
 					<div class="mb-5 md:mb-0 md:mr-[10px]">
 						<h2 class="md:text-5xl">
-							Нам доверяет 5000+
+							Нам доверяет
 							<br />
+							<div class="clientCount mt-1">5000+</div>
 							счастливых клиентов
 						</h2>
 						<p class="leading-[26px] opacity-[0.7]">
@@ -279,7 +280,7 @@
 						Поможем подобрать модель. <br />Выбрать удобный вариант доставки и
 						установки. <br />Гарантия возврата денег.
 					</p>
-					<form class="grid gap-5 mt-[60px]" action="#">
+					<form id="form" class="grid gap-5 mt-[60px]" action="#">
 						<div class="flex flex-col text-left">
 							<label class="font-semibold mb-[15px]" for="name">Ваше имя</label>
 							<input
@@ -323,7 +324,7 @@
 								<option value="10-30">10 000р - 30 000р</option>
 								<option value="30-60">30 000р - 60 000р</option>
 								<option value="60-100">60 000р - 100 000р</option>
-								<option value="100+">100 000р</option>
+								<option value="other">Другое</option>
 							</select>
 						</div>
 						<button

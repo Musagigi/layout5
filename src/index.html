@@ -11,7 +11,7 @@
 	<body class="overflow-x-hidden">
 		<div class="max-sm:max-w-none">
 			<header
-				class="flex items-center justify-between p-2.5 fixed top-[0] left-[0] right-[0] z-[1] transition-all duration-[0.25s] ease-linear header_scrolled md:p-5"
+				class="flex items-center justify-between p-2.5 fixed top-[0] left-[0] right-[0] z-[1] transition-all duration-[0.25s] ease-linear md:p-5"
 			>
 				<img
 					class="h-5 md:h-[30px]"
@@ -20,13 +20,15 @@
 				/>
 
 				<div>
-					<a class="mr-2 font-semibold md:mr-6" href="#contacts">Контакты</a>
+					<a class="linkToForm mr-2 font-semibold md:mr-6" href="#sectionForm"
+						>Контакты</a
+					>
 					<button class="btn-main">Заказать</button>
 				</div>
 			</header>
 
 			<section
-				class="about relative flex flex-col-reverse items-center gap-5 padding-sm pt-[200px] bg-about-section bg-no-repeat bg-center bg-cover md:flex md:flex-row md:flex-jb-ic md:padding-md"
+				class="about relative flex flex-col-reverse items-center gap-5 padding-sm bg-about-section bg-no-repeat bg-center bg-cover md:flex md:flex-row md:flex-jb-ic md:padding-md"
 			>
 				<div
 					class="max-w-[550px] text-center animate-emergenceLeft md:text-left"
@@ -38,7 +40,10 @@
 						Производите дешёвую экологически чистую электроэнергию из солнечного
 						света
 					</p>
-					<button class="btn-main flex items-center mx-auto mt-5 md:mx-0">
+					<a
+						class="btn-main w-[185px] flex items-center mx-auto mt-5 md:mx-0"
+						href="#features"
+					>
 						Узнать подробнее
 						<svg
 							class="w-[10px] ml-[10px] fill-white"
@@ -49,7 +54,7 @@
 								d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
 							/>
 						</svg>
-					</button>
+					</a>
 				</div>
 				<div class="max-w-[550px] animate-emergenceRight">
 					<img
@@ -66,6 +71,7 @@
 			</section>
 			<section
 				class="features padding-sm md:flex md:justify-evenly md:flex-wrap md:padding-md"
+				id="features"
 			>
 				<div class="grid gap-[50px] grid-cols-ideal-[300px]">
 					<div
@@ -273,6 +279,7 @@
 			</section>
 			<section
 				class="form flex justify-center items-center text-center text-white bg-darkBlue padding-sm md:padding-md"
+				id="sectionForm"
 			>
 				<div class="max-w-[550px]">
 					<h1 class="md:text-5xl md:leading-[56px]">Оставьте свои контакты</h1>

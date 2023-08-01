@@ -36,14 +36,19 @@
 	}
 
 	.padding-md {
-		@apply py-[115px] px-5;
+		@apply pb-[115px] pt-[200px] px-5;
 	}
 
 	.padding-sm {
-		@apply py-[50px] px-2.5;
+		@apply pb-[50px] pt-40 px-2.5;
 	}
 
-	.header_scrolled {
+	/* .header_scrolled {
 		@apply bg-white shadow-[0px_12px_34px] shadow-darkWhite;
-	}
+	} */
+}
+
+.header_scrolled {
+	background-color: #fff;
+	box-shadow: 0px 12px 34px #e7eaf9;
 }

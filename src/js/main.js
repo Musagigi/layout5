@@ -1,7 +1,7 @@
 import '../css/main.css'
 
 const INCREASE_NUMBER_ANIMATION_SPEED = 50;
-let animationInited = false
+
 
 function getElemCounter() {
 	return document.querySelector('.clientCount')
@@ -23,11 +23,13 @@ function increaseNumberAnimationStep(i, element, endNumber) {
 	}, INCREASE_NUMBER_ANIMATION_SPEED)
 }
 
+
+let animationInited = false
+
 function initIncreaseNumberAnimation() {
 
 	increaseNumberAnimationStep(0, getElemCounter(), 5000)
 }
-
 
 function updateScroll() {
 	let header = document.querySelector('header')
@@ -49,17 +51,15 @@ function updateScroll() {
 window.addEventListener('scroll', updateScroll)
 
 
-
 let form = document.querySelector('#form')
 let button = form.querySelector('button')
 let budget = document.querySelector('#budget')
 
-budget.addEventListener('change', function handleSelectChange(event) {
+budget.addEventListener('change', function (event) {
 	console.log(event);
 	if (event.target.value === 'other') {
 		let formContainer = document.createElement('div')
 		formContainer.classList = 'otherInput flex flex-col text-left'
-
 		let input = document.createElement('input')
 		input.classList = 'text-dark h-[60px] px-5 rounded-[15px]'
 		input.placeholder = 'Введите ваш вариант'
@@ -73,3 +73,24 @@ budget.addEventListener('change', function handleSelectChange(event) {
 		otherInput.remove()
 	}
 })
+
+
+let links = document.querySelectorAll('a[href^="#"]')
+links.forEach(item => addSmoothScroll(item))
+
+function addSmoothScroll(link) {
+
+	link.addEventListener('click', onLinkClick)
+}
+
+
+function onLinkClick(event) {
+	event.preventDefault()
+	let clickTarget = event.target.hash
+
+	if (clickTarget) {
+		document.querySelector(clickTarget).scrollIntoView({
+			behavior: 'smooth'
+		})
+	}
+}

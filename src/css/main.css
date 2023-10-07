@@ -52,3 +52,7 @@
 	background-color: #fff;
 	box-shadow: 0px 12px 34px #e7eaf9;
 }
+
+form input {
+	color: black;
+}

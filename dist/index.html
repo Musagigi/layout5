@@ -2,18 +2,28 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="./favicon.svg"
+		/>
 		
 		<title>Солнечные батареи GreenCorp</title>
-		<script type="module" crossorigin src="./assets/index-c68e4dbd.js"></script>
-		<link rel="stylesheet" href="./assets/index-c4e85d87.css">
+		<script type="module" crossorigin src="./assets/index-6a482e12.js"></script>
+		<link rel="stylesheet" href="./assets/index-02a0f5a7.css">
 	</head>
 	<body class="overflow-x-hidden">
 		<div class="max-sm:max-w-none">
 			<header
-				class="flex items-center justify-between p-2.5 sticky top-[0] z-[1] bg-darkWhite md:p-5"
+				class="flex items-center justify-between p-2.5 fixed top-[0] left-[0] right-[0] z-[1] transition-all duration-[0.25s] ease-linear md:p-5"
 			>
 				<img
 					class="h-5 md:h-[30px]"
@@ -22,13 +32,17 @@
 				/>
 
 				<div>
-					<a class="mr-2 font-semibold md:mr-6" href="#contacts">Контакты</a>
+					<a
+						class="linkToForm mr-2 font-semibold md:mr-6"
+						href="#sectionForm"
+						>Контакты</a
+					>
 					<button class="btn-main">Заказать</button>
 				</div>
 			</header>
 
 			<section
-				class="about flex flex-col-reverse items-center gap-5 padding-sm bg-about-section bg-no-repeat bg-center bg-cover md:flex md:flex-row md:flex-jb-ic md:padding-md"
+				class="about relative flex flex-col-reverse items-center gap-5 padding-sm bg-about-section bg-no-repeat bg-center bg-cover md:flex md:flex-row md:flex-jb-ic md:padding-md"
 			>
 				<div
 					class="max-w-[550px] text-center animate-emergenceLeft md:text-left"
@@ -40,7 +54,10 @@
 						Производите дешёвую экологически чистую электроэнергию из солнечного
 						света
 					</p>
-					<button class="btn-main flex items-center mx-auto mt-5 md:mx-0">
+					<a
+						class="btn-main w-[185px] flex items-center mx-auto mt-5 md:mx-0"
+						href="#features"
+					>
 						Узнать подробнее
 						<svg
 							class="w-[10px] ml-[10px] fill-white"
@@ -51,7 +68,7 @@
 								d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
 							/>
 						</svg>
-					</button>
+					</a>
 				</div>
 				<div class="max-w-[550px] animate-emergenceRight">
 					<img
@@ -68,6 +85,7 @@
 			</section>
 			<section
 				class="features padding-sm md:flex md:justify-evenly md:flex-wrap md:padding-md"
+				id="features"
 			>
 				<div class="grid gap-[50px] grid-cols-ideal-[300px]">
 					<div
@@ -76,7 +94,11 @@
 						<div
 							class="w-[100px] h-[100px] flex items-center justify-center rounded-full bg-bgFeatures"
 						>
-							<img class="" src="./img/main/1.png" alt="features logo" />
+							<img
+								class=""
+								src="./img/main/1.png"
+								alt="features logo"
+							/>
 						</div>
 						<h3 class="text-[18px] font-semibold mt-3">
 							Уменьшите счета за электричество
@@ -92,7 +114,11 @@
 						<div
 							class="w-[100px] h-[100px] flex items-center justify-center rounded-full bg-bgFeatures"
 						>
-							<img class="" src="./img/main/1.png" alt="features logo" />
+							<img
+								class=""
+								src="./img/main/1.png"
+								alt="features logo"
+							/>
 						</div>
 						<h3 class="text-[18px] font-semibold mt-3">
 							Мониторинг электроэнергии
@@ -108,7 +134,11 @@
 						<div
 							class="w-[100px] h-[100px] flex items-center justify-center rounded-full bg-bgFeatures"
 						>
-							<img class="" src="./img/main/1.png" alt="features logo" />
+							<img
+								class=""
+								src="./img/main/1.png"
+								alt="features logo"
+							/>
 						</div>
 						<h3 class="text-[18px] font-semibold mt-3">
 							Максимальная эффективность
@@ -124,8 +154,9 @@
 				<div class="md:flex md:items-center">
 					<div class="mb-5 md:mb-0 md:mr-[10px]">
 						<h2 class="md:text-5xl">
-							Нам доверяет 5000+
+							Нам доверяет
 							<br />
+							<div class="clientCount mt-1">5000+</div>
 							счастливых клиентов
 						</h2>
 						<p class="leading-[26px] opacity-[0.7]">
@@ -260,7 +291,10 @@
 							class="btn-main text-base font-semibold px-[30px] flex items-center mx-auto mt-5 md:mx-0"
 						>
 							Заказать
-							<svg class="w-[10px] fill-white ml-1" viewBox="0 0 320 512">
+							<svg
+								class="w-[10px] fill-white ml-1"
+								viewBox="0 0 320 512"
+							>
 								<path
 									d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
 								/>
@@ -274,6 +308,7 @@
 			</section>
 			<section
 				class="form flex justify-center items-center text-center text-white bg-darkBlue padding-sm md:padding-md"
+				id="sectionForm"
 			>
 				<div class="max-w-[550px]">
 					<h1 class="md:text-5xl md:leading-[56px]">Оставьте свои контакты</h1>
@@ -281,9 +316,17 @@
 						Поможем подобрать модель. <br />Выбрать удобный вариант доставки и
 						установки. <br />Гарантия возврата денег.
 					</p>
-					<form class="grid gap-5 mt-[60px]" action="#">
+					<form
+						id="form"
+						class="grid gap-5 mt-[60px]"
+						action="#"
+					>
 						<div class="flex flex-col text-left">
-							<label class="font-semibold mb-[15px]" for="name">Ваше имя</label>
+							<label
+								class="font-semibold mb-[15px]"
+								for="name"
+								>Ваше имя</label
+							>
 							<input
 								class="h-[60px] px-5 rounded-[15px] outline-none"
 								type="text"
@@ -292,7 +335,9 @@
 							/>
 						</div>
 						<div class="flex flex-col text-left">
-							<label class="font-semibold mb-[15px]" for="email"
+							<label
+								class="font-semibold mb-[15px]"
+								for="email"
 								>Электронный адрес</label
 							>
 							<input
@@ -303,7 +348,9 @@
 							/>
 						</div>
 						<div class="flex flex-col text-left">
-							<label class="font-semibold mb-[15px]" for="phone"
+							<label
+								class="font-semibold mb-[15px]"
+								for="phone"
 								>Номер телефона</label
 							>
 							<input
@@ -314,7 +361,9 @@
 							/>
 						</div>
 						<div class="flex flex-col text-left">
-							<label class="font-semibold mb-[15px]" for="budget"
+							<label
+								class="font-semibold mb-[15px]"
+								for="budget"
 								>Примерный бюджет</label
 							>
 							<select
@@ -325,7 +374,7 @@
 								<option value="10-30">10 000р - 30 000р</option>
 								<option value="30-60">30 000р - 60 000р</option>
 								<option value="60-100">60 000р - 100 000р</option>
-								<option value="100+">100 000р</option>
+								<option value="other">Другое</option>
 							</select>
 						</div>
 						<button
@@ -347,22 +396,46 @@
 					<div>
 						<h3 class="text-base opacity-[0.7]">Позвонить нам:</h3>
 						<div class="flex flex-col md:mt-[15px]">
-							<a class="" href="#">+7 (495) 999-99-99</a>
+							<a
+								class=""
+								href="#"
+								>+7 (495) 999-99-99</a
+							>
 						</div>
 					</div>
 					<div>
 						<h3 class="text-base opacity-[0.7]">Решение для дома:</h3>
 						<div class="flex flex-col md:mt-[15px]">
-							<a class="" href="#">Солнечные панели GreenRobotic</a>
-							<a class="" href="#">Системы солнечных панелей GreenStation</a>
+							<a
+								class=""
+								href="#"
+								>Солнечные панели GreenRobotic</a
+							>
+							<a
+								class=""
+								href="#"
+								>Системы солнечных панелей GreenStation</a
+							>
 						</div>
 					</div>
 					<div>
 						<h3 class="text-base opacity-[0.7]">Компания</h3>
 						<div class="flex flex-col md:mt-[15px]">
-							<a class="" href="#">Контакты</a>
-							<a class="" href="#">Вакансии</a>
-							<a class="" href="#">СМИ</a>
+							<a
+								class=""
+								href="#"
+								>Контакты</a
+							>
+							<a
+								class=""
+								href="#"
+								>Вакансии</a
+							>
+							<a
+								class=""
+								href="#"
+								>СМИ</a
+							>
 						</div>
 					</div>
 				</div>
